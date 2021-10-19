@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Raxaland</title>
+</head>
+
+<body>
+
+    <h1 class="text-warning">Raxaland</h1>
+
+    <!-- MENU PRINCIPAL -->
+        <section id="menu">
+            <div class="botonesMenu">
+
+                    <button type="button" class="btn btn-warning mibtn" id="play">Jugar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                        <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                        </svg>
+                    </button>
+                
+                    <button type="button" class="btn btn-warning mibtn" id="controles">Controles
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+                        <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"/>
+                        <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                        </svg>
+                    </button>
+
+            </div>
+        </section>
+
+<!-- ELEGIR PERSONAJE -->
+    <section id="seleccP">
+        <template id="template">
+            <form id="formulario" name="formulario" class="miform">
+                <div class="formulario_titulo-seleccP   ">
+                    <p>Elige a tu personaje</p>
+                </div>
+                
+                <label class="formulario_btnRadio border border-dark bg-warning shadrow p-3 rounded" for="ash">
+                    <input id="ash" value="ash" name="personajes" type="radio" checked> Ash
+                    <img src="imagenes/ash-2.png">
+                </label>
+                <label class="formulario_btnRadio border-top-0 border border-dark bg-warning shadow p-3 rounded" for="girl">
+                    <input id="girl" value="bianca" name="personajes" type="radio">Bianca
+                    <img src="imagenes/bianca-2.png">
+                </label>
+                <input type="submit" class="btn btn-warning mibtn" value="Empezar">
+            </form>
+        </template>
+    </section>
+
+<!-- MENU PAUSA -->
+    <section id="sectPausa" class="oculto">
+       
+        <div id="templatePausa" class="contenedorPausa container">
+        
+            <div class="container estiloPausa bg-warning shadow-lg p-3 rounded">
+            
+                <div class="estiloPausa-text">
+                        <p id="pausa" class="text-pausa">PAUSA</p>
+                        <p id="victoria" class="text-pausa ">VICTORIA</p>
+                        <p id="muerto" class="text-pausa ">MUERTO</p>
+                </div>
+            
+                <div class="estiloPausa-boton">
+                    <button class="botonreanudar btn btn-dark mibtn" id="reanudar">Reanudar</button>
+                </div>
+            </div>
+        
+        </div>
+    
+    </section>
+   
+    <!-- JUEGO CANVAS -->
+    <main class="main">
+        <canvas class="oculto" id="canvas"></canvas>
+    </main>
+
+    <!-- MENU CONTROLES -->
+    <section id="sectionControls" class="oculto">
+        <div class="box-controles">
+            <div class="box-controles_titulo ">
+                <p class="text-light">Controles</p>
+            </div>
+        
+            <ul class="box-controles_lista  rounded  text-warning">
+                <li>
+                    Arriba:
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-square miIcon1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                    </svg>
+                </li>
+                <li>
+                    Abajo: 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-square miIcon2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                    </svg>
+                </li>
+                <li>
+                    Derecha: 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-square miIcon3" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                </li>
+                <li>
+                    Izquierda:
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-square miIcon4" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                    </svg>
+                </li>
+                <li>
+                    Pausa: 
+                    <img class="miIcon5" src="https://img.icons8.com/windows/32/ffffff/esc.png"/>
+                </li>
+                <li>
+                    Guardar: <span class="miIcon6" >G</span> 
+                </li>
+                <li>
+                    Cargar: <span class="miIcon7">C</span> 
+                </li>
+            </ul>
+                <button class="btn btn-warning mibtn" id="volver">
+                    Volver
+                </button>
+        </div>
+        
+
+    </section>    
+
+    <script src="howler.core.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="sonidos.js"></script>
+    <script src="clase-protagonista.js"></script>
+    <script src="clase-enemigo.js"></script>
+    <script src="guardar-cargar.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
